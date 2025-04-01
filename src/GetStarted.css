@@ -1,0 +1,50 @@
+.section__background__img{
+  background: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+.section__header{
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.286);
+  color: aliceblue;
+  height: 100px;
+  padding-top: 15px;
+  padding-left: 40px;
+}
+.box__logo{
+  height: 60px;
+  width: 100px;
+  object-fit: cover;
+}
+.inner__logo{
+  height: 100%;
+  width: 100%;
+}
+.box__btns{
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+}
+.inner__btn{
+  height: 60px;
+  width: 170px;
+  background: transparent;
+  border-radius: 8px;
+  border: 2px solid #E8B15B;
+  font-weight: 600;
+  color: #E8B15B;
+  font-size: 16px;
+  transition: 0.5s;
+}
+.btn__active{
+  background: #E8B15B;
+  color: #000000b2;
+  transition: 0.5s;
+}

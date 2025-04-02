@@ -55,4 +55,10 @@
     font-weight: 700;
     border-radius: 8px;
     margin-top: 40px;
+    transition: 0.5s;
+  }
+  .btn__play__recomendation__game:hover{
+    background: #E8B15B;
+    color: #000;
+    transition: 0.5s;
   }

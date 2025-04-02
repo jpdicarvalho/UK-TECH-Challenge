@@ -105,3 +105,21 @@
     padding-left: 15px;
     z-index: 2;
   }
+
+  .container__card__anhother__game{
+    width: 100%;
+    padding-left: 40px;
+  }
+  .Swiper__card__anhother__game{
+    width: 2200px;
+    overflow: hidden;
+  }
+  .SwiperSlide__card__anhother__game {
+    border-radius: 15px;
+
+    overflow: hidden;
+  }
+  
+  .card__anhother__game {
+    height: 300px;
+  }

@@ -2,12 +2,15 @@ import React, { useState } from "react";
 import Header from "../src/componentes/Header";
 import FeaturedGames from "../src/componentes/FeaturedGames";
 import MostPlayedGamesSlider from "./componentes/MostPlayedGamesSlider";
-import ActionGamesSlider from "./componentes/ActionGamesSlider";
+import AnotherGamesSlider from "./componentes/AnotherGamesSlider";
 import CardsGamesSlider from "./componentes/CardsGamesSlider";
 import RewardCoins from "../src/componentes/RewardCoins";
 import RecommendationSection from "../src/componentes/RecommendationSection";
+import StrategyGamesSlider from "../src/componentes/StrategyGamesSlider";
+import Footer from "./componentes/Footer";
 
-import { featuredGames, mostPlayedGames, recomendationGames } from "../src/data/games";
+
+import { featuredGames, mostPlayedGames, anotherGames, cardsGames, recomendationGames, strategeGames } from "../src/data/games";
 
 import "./GetStarted.css";
 
@@ -46,10 +49,11 @@ function GetStarted() {
 
       <MostPlayedGamesSlider title="Jogos mais jogados" games={mostPlayedGames} />
       <RewardCoins />
-      <ActionGamesSlider title="Ação" games={mostPlayedGames} />
-      <CardsGamesSlider title="Jogos de cartas" games={mostPlayedGames} />
+      <AnotherGamesSlider games={anotherGames} />
+      <CardsGamesSlider title="Jogos de cartas" games={cardsGames} />
       <RecommendationSection title="Recomendações" games={recomendationGames} />
-      <MostPlayedGamesSlider title="Jogos de estratégia" games={mostPlayedGames} />
+      <StrategyGamesSlider title="Jogos de estratégia" games={strategeGames} />
+      <Footer />
     </>
   );
 }

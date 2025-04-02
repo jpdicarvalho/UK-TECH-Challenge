@@ -1,0 +1,132 @@
+.footer {
+    background-color: #2d2b32;
+    color: #fff;
+    padding: 40px 20px;
+    font-size: 14px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  
+  .footer__container {
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .footer__top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid #4b4852;
+    padding-bottom: 30px;
+  }
+  .footer__mid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid #4b4852;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #7b7b7b;
+  }
+  .footer__logo h2 {
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: bold;
+  }
+  .footer__logo span {
+    font-size: 22px;
+  }
+  .footer__logo small {
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+  .icon__social__midia{
+    width: 30px;
+    height: 30px;
+  }
+  .footer__menus {
+    display: flex;
+    gap: 60px;
+  }
+  
+  .footer__menus h4 {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .footer__rating {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+  }
+  
+  .footer__rating__card {
+    display: flex;
+    background-color: #1f1e23;
+    border-radius: 12px;
+    padding: 10px;
+    gap: 10px;
+    align-items: center;
+    color: #7b7b7b;
+    font-size: 13px;
+  }
+  
+  .rating__number {
+    background: #f9c835;
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    width: 50px;
+    border-radius: 6px;
+    text-align: center;
+  }
+  
+  .footer__social svg {
+    font-size: 20px;
+    margin-left: 10px;
+    color: white;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 6px;
+  }
+  
+  .footer__bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 20px;
+    font-size: 13px;
+    gap: 10px;
+    color: #7b7b7b;
+  }
+  
+  .footer__links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .footer__design a {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .footer__top {
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    .footer__rating {
+      align-items: flex-start;
+      margin-top: 20px;
+    }
+  
+    .footer__bottom {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  }  

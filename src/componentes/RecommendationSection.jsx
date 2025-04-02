@@ -1,9 +1,13 @@
 import React from "react";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import { FiUser } from "react-icons/fi";
+
 import LabelGame from "../assets/label-game.png";
+
 import "swiper/css";
+import "../styles/RecommendationSection.css";
 
 function RecommendationSection({ title, games }) {
   return (

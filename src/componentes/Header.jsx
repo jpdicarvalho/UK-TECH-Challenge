@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "../assets/logo.png";
 
-import "../styles/Header.css"; // opcional se quiser separar o CSS
+import "../styles/Header.css";
 
 function Header({ isBtnSelected, onLoginClick, onRegisterClick }) {
   return (

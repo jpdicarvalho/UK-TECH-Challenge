@@ -1,0 +1,107 @@
+.section__most__played__games{
+    margin-top: 90px;
+    overflow: hidden;
+  
+  }
+  .background__wrapper {
+    position: absolute;
+    width: 100%;
+    height: 350px;
+  }
+  .img__background {
+    position: absolute;
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+    z-index: -2;
+  }
+  .background__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 350px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: -1;
+  }
+  .header__most__played__games{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 40px;
+    margin-top: 10px;
+  }
+  .tittle__most__payed__games{
+    color: #f6f6f6;
+  }
+  .box__see__more{
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+    padding-right: 20px;
+    color: gray;
+  }
+  .text__see__more{
+    font-size: 12px;
+  }
+  .box__most__payed__games{
+    height: 320px;
+    width: 320px;
+  }
+  .img__cover__game{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .container__most__played__games{
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    padding-left: 40px;
+    overflow: hidden;
+  }
+  .card__most__payed__game{
+    height: 300px;
+    margin-right: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  .image__wrapper__card__most__payed__game {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .img__cover__game {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .img__mask__card__most__payed__game {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(32, 32, 32, 0.607); 
+    z-index: 1;
+    border-radius: 8px; 
+  }
+  .box__amount__users{
+    display: flex;
+    background: rgba(128, 128, 128, 0.26);
+    color: #f6f6f6;
+    position: absolute;
+    margin-top: -285px;
+    margin-left: 15px;
+    border-radius: 20px;
+    width: 70px;
+    height: 40px;
+    z-index: 2;
+  }
+  .box__name__game__most__payed__game{
+    position: absolute;
+    margin-top: -40px;
+    color: #f6f6f6;
+    padding-left: 15px;
+    z-index: 2;
+  }

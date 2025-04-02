@@ -1,7 +1,12 @@
 import React from "react";
+
 import CoinImg from "../assets/coin-img.png";
 import BannerImg from "../assets/banner-image.png";
+
 import { MdArrowRightAlt } from "react-icons/md";
+
+import "../styles/RewardCoins.css";
+
 
 function RewardCoins() {
   return (

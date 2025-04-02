@@ -1,0 +1,128 @@
+.section__featured__games{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 400px;
+    top: 115px;
+    padding-left: 40px;
+    z-index: 2;
+  }
+  .box__games {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 500px;
+    align-items: center;
+  }
+  .game-card {
+    position: relative;
+    width: 330px;
+    height: 150px;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .game-card:hover {
+    transform: scale(1.03);
+    border: 2px solid #E8B15B;
+    transition: 0.5s;
+    color: #E8B15B;
+  }
+  .game-card--active {
+    transform: scale(1.03);
+    border: 2px solid #E8B15B;
+    margin-left: 100px;
+    transition: 0.5s;
+    color: #E8B15B;
+  }
+  .game-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(5, 5, 5, 0.5); /* máscara escura */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #f6f6f6;
+    transition: 0.5s;
+  }
+  .game-title {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    justify-content: flex-end;
+    transition: 0.5s;
+  }
+  .game-title:hover {
+    color: #E8B15B;
+    transition: 0.5s;
+  }
+  .game-title--active{
+    color: #E8B15B;
+    transition: 0.5s;
+  }
+  
+  .box__info__games__selected{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .name__game{
+    width: 332px;
+    color: #f6f6f6;
+    font-size: 24px;
+  }
+  .box__label__game{
+    display: flex;
+    align-items: center;
+    width: 332px;
+    color: #f6f6f6;
+  }
+  .inner__img__label__game{
+    height: 13px;
+    width: 13px;
+  }
+  .text__label__game{
+    font-size: 12px;
+    margin-left: 5px;
+    font-weight: 500;
+  }
+  .box__btn__play__game{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 332px;
+    margin-top: 25px;
+    font-weight: 500px;
+    color: #f6f6f6;
+  }
+  .text__add__to__favorites{
+    font-size: 10px;
+    margin-right: 5px;
+  }
+  .icon__IoIosHeartEmpty{
+    margin-right: 20px;
+  }
+  .icon__IoPlay{
+    font-size: 20px;
+    margin-left: 10px;
+  }  

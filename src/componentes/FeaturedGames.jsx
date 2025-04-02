@@ -1,7 +1,11 @@
 import React from "react";
+
 import LabelGame from "../assets/label-game.png";
+
 import { IoIosHeartEmpty } from "react-icons/io";
 import { IoPlay } from "react-icons/io5";
+
+import "../styles/FeaturedGames.css"
 
 function FeaturedGames({ featuredGames, gameSelected, onSelectGame }) {
   const selectedGame = featuredGames.find((game) => game.id === gameSelected);

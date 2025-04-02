@@ -109,6 +109,7 @@ const recomendationGames = [
   },
   
 ]
+
 function GetStarted() {
     const [isBtnSelected, setIsBtnSelected] = useState(false)
     const [gameSelected, setGameSelected] = useState([0]);

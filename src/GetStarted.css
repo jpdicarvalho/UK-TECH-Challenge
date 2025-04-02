@@ -3,6 +3,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .section__background__img {
   position: relative;
   display: flex;
@@ -39,7 +40,7 @@
   height: 100px;
   padding-top: 15px;
   padding-left: 40px;
-  z-index: 2;
+  z-index: 3;
 }
 .box__logo{
   height: 60px;

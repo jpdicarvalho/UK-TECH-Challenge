@@ -202,3 +202,9 @@
   font-size: 20px;
   margin-left: 10px;
 }
+
+.section__most__played__games{
+  background: red;
+  margin-top: 90px;
+  padding-left: 40px;
+}

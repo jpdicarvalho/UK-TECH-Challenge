@@ -116,7 +116,14 @@ function GetStarted() {
 
                 </div>
               )}
-          </div>        
+          </div>
+
+          <div className="section__most__played__games">
+              <h3>Jogos mais jogados</h3>
+              <div className="container__games">
+
+              </div>
+          </div>
       </>
     )
   }

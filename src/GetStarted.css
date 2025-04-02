@@ -204,7 +204,129 @@
 }
 
 .section__most__played__games{
-  background: red;
   margin-top: 90px;
+  overflow: hidden;
+
+}.background__wrapper {
+  position: absolute;
+  width: 100%;
+  height: 350px;
+}
+
+.img__background {
+  position: absolute;
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.background__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 350px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Altere o valor para mais ou menos escuro */
+  z-index: -1;
+}
+.header__most__played__games{
+  display: flex;
+  justify-content: space-between;
   padding-left: 40px;
+  margin-top: 10px;
+}
+.tittle__most__payed__games{
+  color: #f6f6f6;
+}
+.box__see__more{
+  display: flex;
+  justify-content: space-between;
+  width: 120px;
+  padding-right: 20px;
+  color: gray;
+}
+.text__see__more{
+  font-size: 12px;
+}
+.box__most__payed__games{
+  height: 320px;
+  width: 320px;
+}
+.img__cover__game{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.container__most__played__games{
+  display: flex;
+  padding: 10px;
+  width: 100%;
+  padding-left: 40px;
+  overflow: hidden;
+}
+.card__most__payed__game{
+  height: 300px;
+  margin-right: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+
+.section__reward__coins{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 400px;
+  padding: 40px 0px 40px 40px;
+}
+.box__reward__coins{
+  display: flex;
+}
+.btn__reward__coins{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  width: 145px;
+  text-align: left;
+  margin-top: 25px;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #E8B15B;
+  transition: 0.5s;
+  border: none;
+}
+.btn__reward__coins:hover{
+  width: 150px;
+  background: #E8B15B;
+  color: #000;
+  transition: 0.5s;
+}
+.box__text__reward__coins{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+  color: rgb(161, 161, 161);
+}
+.highlight-number {
+  color:rgba(0, 255, 255, 0.744);
+  font-weight: bold;
+}
+.text__reward__coins{
+  font-size: 28px;
+  font-weight: 400;
+}
+.box__banner__img{
+  height: 300px;
+  background-color: #f6f6f6;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.inner__banner__img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }

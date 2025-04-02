@@ -5,17 +5,17 @@ import { Autoplay } from "swiper/modules";
 import { FiUser } from "react-icons/fi";
 import { MdArrowRightAlt } from "react-icons/md";
 
-import NineImg from "../assets/nine-img.png";
+import UnoImg from "../assets/uno-img.png";
 
 import "swiper/css";
 
 import "../styles/GameSlider.css";
 
-function MostPlayedGamesSlider({ title, games }) {
+function CardsGamesSlider({ title, games }) {
   return (
     <div className="section__most__played__games">
       <div className="background__wrapper">
-        <img src={NineImg} className="img__background" alt="" />
+        <img src={UnoImg} className="img__background" alt="" />
         <div className="background__overlay" />
       </div>
       <div className="header__most__played__games">
@@ -68,4 +68,4 @@ function MostPlayedGamesSlider({ title, games }) {
   );
 }
 
-export default MostPlayedGamesSlider;
+export default CardsGamesSlider;

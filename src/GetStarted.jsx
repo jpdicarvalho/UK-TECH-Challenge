@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import Header from "../src/componentes/Header";
 import FeaturedGames from "../src/componentes/FeaturedGames";
-import GameSlider from "./componentes/MostPlayedGamesSlider";
+import MostPlayedGamesSlider from "./componentes/MostPlayedGamesSlider";
+import ActionGamesSlider from "./componentes/ActionGamesSlider";
+import CardsGamesSlider from "./componentes/CardsGamesSlider";
 import RewardCoins from "../src/componentes/RewardCoins";
 import RecommendationSection from "../src/componentes/RecommendationSection";
 
@@ -42,12 +44,12 @@ function GetStarted() {
         onSelectGame={setGameSelected}
       />
 
-      <GameSlider title="Jogos mais jogados" games={mostPlayedGames} />
+      <MostPlayedGamesSlider title="Jogos mais jogados" games={mostPlayedGames} />
       <RewardCoins />
-      <GameSlider title="Ação" games={mostPlayedGames} />
-      <GameSlider title="Jogos de cartas" games={mostPlayedGames} />
+      <ActionGamesSlider title="Ação" games={mostPlayedGames} />
+      <CardsGamesSlider title="Jogos de cartas" games={mostPlayedGames} />
       <RecommendationSection title="Recomendações" games={recomendationGames} />
-      <GameSlider title="Jogos de estratégia" games={mostPlayedGames} />
+      <MostPlayedGamesSlider title="Jogos de estratégia" games={mostPlayedGames} />
     </>
   );
 }

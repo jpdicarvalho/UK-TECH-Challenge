@@ -9,7 +9,7 @@ import "swiper/css";
 
 import "../styles/GameSlider.css";
 
-function GameSlider({ title, games }) {
+function ActionGamesSlider({ title, games }) {
   return (
     <div className="section__most__played__games">
       <div className="header__most__played__games">
@@ -62,4 +62,4 @@ function GameSlider({ title, games }) {
   );
 }
 
-export default GameSlider;
+export default ActionGamesSlider;

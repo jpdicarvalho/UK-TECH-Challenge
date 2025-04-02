@@ -2,6 +2,7 @@
 import { useState } from "react"
 
 import Logo from "../src/assets/logo.png"
+import LabelGame from "../src/assets/label-game.png"
 import CrashImg from "../src/assets/crash-img.png"
 import MinecraftImg from "../src/assets/minecraft-img.jpg"
 import GenshinImg from "../src/assets/genshin-img.jpg"
@@ -14,18 +15,20 @@ const featuredGames = [
     id: 1,
     name: 'Crash Team Racing Nitro',
     image: CrashImg,
+    label: 'Corrida e voo'
   },
   {
     id: 2,
     name: 'Minecraft',
     image: MinecraftImg,
+    label: 'Aventura e sobrevivência'
   },
   {
     id: 3,
     name: 'Genshin Impact',
     image: GenshinImg,
-  },
-
+    label: 'RPG de ação e mundo aberto'
+  }
 ]
 
 function GetStarted() {
@@ -90,8 +93,17 @@ function GetStarted() {
                 </div>
               ))}
             </div>
-            <div className="box__games__selected">
-              games selected
+            <div className="box__info__games__selected">
+              {selectedGame && (
+                <div>
+                  <h3 className="name__game">{selectedGame.name}</h3>
+                  <div className="box__label__game">
+                    <img src={LabelGame} className="inner__img__label__game" alt="Gênero do jogo" />
+                    <p className="text__label__game">{selectedGame.label} • Novidade</p>
+                  </div>
+                  
+                </div>
+              )}
             </div>
           </div>        
       </>

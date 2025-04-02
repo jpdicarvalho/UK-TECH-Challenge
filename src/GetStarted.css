@@ -227,7 +227,7 @@
   left: 0;
   height: 350px;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Altere o valor para mais ou menos escuro */
+  background-color: rgba(0, 0, 0, 0.5); 
   z-index: -1;
 }
 .header__most__played__games{
@@ -268,10 +268,49 @@
 .card__most__payed__game{
   height: 300px;
   margin-right: 20px;
-  border-radius: 8px;
+  border-radius: 12px;
   overflow: hidden;
 }
-
+.image__wrapper__card__most__payed__game {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.img__cover__game {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.img__mask__card__most__payed__game {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(32, 32, 32, 0.607); 
+  z-index: 1;
+  border-radius: 8px; 
+}
+.box__amount__users{
+  display: flex;
+  background: rgba(128, 128, 128, 0.26);
+  color: #f6f6f6;
+  position: absolute;
+  margin-top: -285px;
+  margin-left: 15px;
+  border-radius: 20px;
+  width: 70px;
+  height: 40px;
+  z-index: 2;
+}
+.box__name__game__most__payed__game{
+  position: absolute;
+  margin-top: -40px;
+  color: #f6f6f6;
+  padding-left: 15px;
+  z-index: 2;
+}
 
 .section__reward__coins{
   display: flex;
@@ -329,4 +368,64 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+
+.container__Swiper{
+  overflow: hidden;
+  margin-left: 40px;
+  width: 2400px;
+
+}
+.container__SwiperSlide{
+  height: 600px;
+  width: 600px;
+  border-radius: 12px;
+  background: yellow;
+  overflow: hidden;
+
+}
+.card__recomendation__game{
+  background: green;
+  width: 600px;
+  height: 600px;
+  overflow: hidden;
+
+}
+.in__card__recomendation__game{
+  margin-top: -585px;
+}
+.box__details__recomendation__game{
+  position: absolute;
+  margin-top: -220px;
+  color: #f6f6f6;
+  padding-left: 20px;
+  z-index: 2;
+}
+.box__img__label__recomendation__game{
+  display: flex;
+  justify-content: space-between;
+  width: 45px;
+  align-items: center;
+  margin-bottom: 20px
+}
+.text__label__recomendation__game{
+  font-size: 12px;
+}
+.text__message__label__recomendation__game{
+  font-size: 14px;
+  font-weight: 200;
+  margin-top: 6px;
+}
+.btn__play__recomendation__game{
+  height: 50px;
+  width: 150px;
+  padding: 10px;
+  background: transparent;
+  border: 2px solid #E8B15B;
+  color: #E8B15B;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 8px;
+  margin-top: 40px;
 }

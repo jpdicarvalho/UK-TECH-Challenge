@@ -16,10 +16,14 @@ import AliensImg from "../src/assets/aliens-img.png"
 import AgeOfImpiresIImg from "../src/assets/age-of-empires-img.png"
 import BannerImg from "../src/assets/banner-image.png"
 import CoinImg from "../src/assets/coin-img.png"
+import SiniperImg from "../src/assets/sniper-elite-img.png"
+import Gang from "../src/assets/gang-beasts-img.png"
+import SpiderManImg from "../src/assets/spider-man-img.png"
 
 import { IoIosHeartEmpty } from "react-icons/io";
 import { IoPlay } from "react-icons/io5";
 import { MdArrowRightAlt } from "react-icons/md";
+import { FiUser } from "react-icons/fi";
 
 
 import './GetStarted.css'
@@ -78,6 +82,33 @@ const mostPlayedGames = [
   }
 ]
 
+const recomendationGames = [
+  {
+    id: 1,
+    name: 'Spider-Man',
+    image: SpiderManImg,
+    label: 'Luta',
+    message: 'Aproveite o que há de melhor em um jogo.',
+    users: 224
+  },
+  {
+    id: 2,
+    name: 'Gang Beasts',
+    image: Gang,
+    label: 'Luta',
+    message: 'Divirta-se com sua família.',
+    users: 224
+  },
+  {
+    id: 3,
+    name: 'Sniper Elite Resistance',
+    image: SiniperImg,
+    label: 'Tiro',
+    message: 'Seja um verdadeiro franco atirador!',
+    users: 224
+  },
+  
+]
 function GetStarted() {
     const [isBtnSelected, setIsBtnSelected] = useState(false)
     const [gameSelected, setGameSelected] = useState([0]);
@@ -125,6 +156,7 @@ function GetStarted() {
                 </button>
             </div>
          </div>
+
          <div className="section__featured__games">
             <div className="box__games">
               {featuredGames.map((game, index) => (
@@ -195,10 +227,22 @@ function GetStarted() {
               >
                 {mostPlayedGames.map((game, index) => (
                   <SwiperSlide key={index}>
-                    <div className="card__most__payed__game">
+                  <div className="card__most__payed__game">
+                    <div className="image__wrapper__card__most__payed__game">
                       <img src={game.image} className="img__cover__game" alt={game.name} />
+                      <div className="img__mask__card__most__payed__game" />
                     </div>
-                  </SwiperSlide>
+                  </div>
+                
+                  <div className="box__amount__users center">
+                    <FiUser />
+                    {game.users}
+                  </div>
+                
+                  <div className="box__name__game__most__payed__game">
+                    {game.name}
+                  </div>
+                </SwiperSlide>
                 ))}
               </Swiper>
             </div>
@@ -219,6 +263,222 @@ function GetStarted() {
             </div>
             <div className="box__banner__img">
               <img src={BannerImg} className="inner__banner__img" alt="" />
+            </div>
+          </div>
+
+          <div className="section__most__played__games">
+            <div className="header__most__played__games">
+              <h3 className="tittle__most__payed__games">Ação</h3>
+              <div className="box__see__more center">
+                <p className="text__see__more">VER MAIS</p>
+                <MdArrowRightAlt />
+              </div>
+            </div>
+
+            <div className="container__most__played__games">
+              <Swiper
+                modules={[Autoplay]}
+                spaceBetween={16}
+                slidesPerView={3}
+                loop={true}
+                speed={7000}
+                autoplay={{
+                  delay: 0,
+                  disableOnInteraction: false,
+                }}
+                breakpoints={{
+                  640: { slidesPerView: 2 },
+                  768: { slidesPerView: 3 },
+                  1024: { slidesPerView: 4 },
+                }}
+              >
+                {mostPlayedGames.map((game, index) => (
+                  <SwiperSlide key={index}>
+                  <div className="card__most__payed__game">
+                    <div className="image__wrapper__card__most__payed__game">
+                      <img src={game.image} className="img__cover__game" alt={game.name} />
+                      <div className="img__mask__card__most__payed__game" />
+                    </div>
+                  </div>
+                
+                  <div className="box__amount__users center">
+                    <FiUser />
+                    {game.users}
+                  </div>
+                
+                  <div className="box__name__game__most__payed__game">
+                    {game.name}
+                  </div>
+                </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
+          </div>
+
+          <div className="section__most__played__games">
+            <div className="background__wrapper">
+              <img src={NineImg} className="img__background" alt="" />
+              <div className="background__overlay" />
+            </div>
+
+            <div className="header__most__played__games">
+              <h3 className="tittle__most__payed__games">Jogos de cartas</h3>
+              <div className="box__see__more center">
+                <p className="text__see__more">VER MAIS</p>
+                <MdArrowRightAlt />
+              </div>
+            </div>
+
+            <div className="container__most__played__games">
+              <Swiper
+                modules={[Autoplay]}
+                spaceBetween={16}
+                slidesPerView={3}
+                loop={true}
+                speed={7000}
+                autoplay={{
+                  delay: 0,
+                  disableOnInteraction: false,
+                }}
+                breakpoints={{
+                  640: { slidesPerView: 2 },
+                  768: { slidesPerView: 3 },
+                  1024: { slidesPerView: 4 },
+                }}
+              >
+                {mostPlayedGames.map((game, index) => (
+                  <SwiperSlide key={index}>
+                  <div className="card__most__payed__game">
+                    <div className="image__wrapper__card__most__payed__game">
+                      <img src={game.image} className="img__cover__game" alt={game.name} />
+                      <div className="img__mask__card__most__payed__game" />
+                    </div>
+                  </div>
+                
+                  <div className="box__amount__users center">
+                    <FiUser />
+                    {game.users}
+                  </div>
+                
+                  <div className="box__name__game__most__payed__game">
+                    {game.name}
+                  </div>
+                </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
+          </div>
+
+          <div className="section__most__played__games">
+
+            <div className="header__most__played__games">
+              <h3 className="tittle__most__payed__games">Recomendações</h3>
+              <div className="box__see__more center">
+                <p className="text__see__more">VER MAIS</p>
+                <MdArrowRightAlt />
+              </div>
+            </div>
+
+            <div className="container__recomendation__game">
+              <Swiper
+                modules={[Autoplay]}
+                spaceBetween={20}
+                slidesPerView={3}
+                loop={true}
+                speed={7000}
+                autoplay={{
+                  delay: 0,
+                  disableOnInteraction: false,
+                }}
+                breakpoints={{
+                  640: { slidesPerView: 2 },
+                  768: { slidesPerView: 3 },
+                  1024: { slidesPerView: 4 },
+                }}
+                className="container__Swiper"
+              >
+                {recomendationGames.map((game, index) => (
+                  <SwiperSlide key={index} className="container__SwiperSlide">
+                  <div className="card__recomendation__game">
+                    <div className="image__wrapper__card__most__payed__game">
+                      <img src={game.image} className="img__cover__game" alt={game.name} />
+                      <div className="img__mask__card__most__payed__game" />
+                    </div>
+                  </div>
+                
+                  <div className="box__amount__users in__card__recomendation__game center">
+                    <FiUser />
+                    {game.users}
+                  </div>
+                
+                  <div className="box__details__recomendation__game">
+                    <div className="box__img__label__recomendation__game">
+                      <img src={LabelGame} className="inner__img__label__game" alt="Gênero do jogo" />
+                      <p className="text__label__recomendation__game">{game.label}</p>
+                    </div>
+                    <h3>
+                      {game.name}
+                    </h3>
+                    <p className="text__message__label__recomendation__game">{game.message}</p>
+                    <button className="btn__play__recomendation__game">Jogar agora</button>
+                  </div>
+                </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
+          </div>
+
+          <div className="section__most__played__games">
+            <div className="background__wrapper">
+              <img src={NineImg} className="img__background" alt="" />
+              <div className="background__overlay" />
+            </div>
+
+            <div className="header__most__played__games">
+              <h3 className="tittle__most__payed__games">Jogos de estratégia</h3>
+              <div className="box__see__more center">
+                <p className="text__see__more">VER MAIS</p>
+                <MdArrowRightAlt />
+              </div>
+            </div>
+
+            <div className="container__most__played__games">
+              <Swiper
+                modules={[Autoplay]}
+                spaceBetween={16}
+                slidesPerView={3}
+                loop={true}
+                speed={7000}
+                autoplay={{
+                  delay: 0,
+                  disableOnInteraction: false,
+                }}
+                breakpoints={{
+                  640: { slidesPerView: 2 },
+                  768: { slidesPerView: 3 },
+                  1024: { slidesPerView: 4 },
+                }}
+              >
+                {mostPlayedGames.map((game, index) => (
+                  <SwiperSlide key={index}>
+                  <div className="card__most__payed__game">
+                    <div className="image__wrapper__card__most__payed__game">
+                      <img src={game.image} className="img__cover__game" alt={game.name} />
+                      <div className="img__mask__card__most__payed__game" />
+                    </div>
+                  </div>
+                
+                  <div className="box__amount__users center">
+                    <FiUser />
+                    {game.users}
+                  </div>
+                
+                  <div className="box__name__game__most__payed__game">
+                    {game.name}
+                  </div>
+                </SwiperSlide>
+                ))}
+              </Swiper>
             </div>
           </div>
       </>

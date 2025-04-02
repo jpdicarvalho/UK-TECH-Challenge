@@ -26,3 +26,15 @@
   background: rgba(5, 5, 5, 0.5);
   z-index: 1;
 }
+/* Responsivo */
+@media (max-width: 845px) {
+  .section__background__img {
+    margin-bottom: 220px;
+  }
+}
+
+@media (max-width: 568px) {
+  .section__background__img {
+    margin-bottom: 290px;
+  }
+}

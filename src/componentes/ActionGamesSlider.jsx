@@ -6,6 +6,7 @@ import { FiUser } from "react-icons/fi";
 import { MdArrowRightAlt } from "react-icons/md";
 
 import "swiper/css";
+
 import "../styles/GameSlider.css";
 
 function GameSlider({ title, games }) {

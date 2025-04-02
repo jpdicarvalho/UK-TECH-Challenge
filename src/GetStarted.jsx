@@ -1,14 +1,13 @@
 import React, { useState } from "react";
-import Header from "../components/Header";
-import FeaturedGames from "../components/FeaturedGames";
-import GameSlider from "../components/GameSlider";
-import RewardCoins from "../components/RewardCoins";
-import RecommendationSection from "../components/RecommendationSection";
+import Header from "../src/componentes/Header";
+import FeaturedGames from "../src/componentes/FeaturedGames";
+import GameSlider from "./componentes/MostPlayedGamesSlider";
+import RewardCoins from "../src/componentes/RewardCoins";
+import RecommendationSection from "../src/componentes/RecommendationSection";
 
-import { featuredGames, mostPlayedGames, recomendationGames } from "../data/games";
-import NineImg from "../assets/nine-img.png"; // usado como background
+import { featuredGames, mostPlayedGames, recomendationGames } from "../src/data/games";
 
-import "../styles/GetStarted.css"; // mantém seu CSS atual
+import "./GetStarted.css";
 
 function GetStarted() {
   const [isBtnSelected, setIsBtnSelected] = useState(false);

@@ -7,6 +7,9 @@ import CrashImg from "../src/assets/crash-img.png"
 import MinecraftImg from "../src/assets/minecraft-img.jpg"
 import GenshinImg from "../src/assets/genshin-img.jpg"
 
+import { IoIosHeartEmpty } from "react-icons/io";
+import { IoPlay } from "react-icons/io5";
+
 
 import './GetStarted.css'
 
@@ -93,18 +96,26 @@ function GetStarted() {
                 </div>
               ))}
             </div>
-            <div className="box__info__games__selected">
+            
               {selectedGame && (
-                <div>
+                <div className="box__info__games__selected">
                   <h3 className="name__game">{selectedGame.name}</h3>
                   <div className="box__label__game">
                     <img src={LabelGame} className="inner__img__label__game" alt="Gênero do jogo" />
                     <p className="text__label__game">{selectedGame.label} • Novidade</p>
                   </div>
                   
+                  <div className="box__btn__play__game">
+                    <p className="text__add__to__favorites">Adicionar aos favoritos</p>
+                    <IoIosHeartEmpty className="icon__IoIosHeartEmpty"/>
+                    <button className="inner__btn btn__active center">
+                      Jogar agora
+                      <IoPlay className="icon__IoPlay"/>
+                    </button>
+                  </div>
+
                 </div>
               )}
-            </div>
           </div>        
       </>
     )

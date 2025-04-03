@@ -65,6 +65,14 @@ Em seguida, acesse o diretório que contém o projeto
   ````sh
   cd UK-TECH-Challenge
   ````
+Instale as dependências o projeto  
+  ````sh
+  npm install
+  ````
+Execulte o projeto  
+  ````sh
+  npm run dev
+  ````
 Depois, para acessar a aplicação, use:
   ````sh
    http://localhost:5173

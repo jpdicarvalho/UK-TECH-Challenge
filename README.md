@@ -32,14 +32,15 @@ Durante o desenvolvimento, foram seguidas diversas boas práticas de engenharia 
 - Estrutura de pastas modular para facilitar manutenção e escalabilidade
 - Boas práticas de semântica HTML e acessibilidade
 
+## Estrutura do projeto
 ```sh
 src/
-├── assets/                 # Imagens estáticas e ícones
 ├── componentes/            # Componentes reutilizáveis
 ├── data/                   # Dados mockados para exibição
+├── games_images/           # Imagens estáticas
 ├── pages/                  # Página principal da aplicação
 ├── styles/                 # Arquivos CSS separados por componente
-└── main.jsx                # Entrada da aplicação
+
 ````
 ## Como Rodar o Projeto Localmente?
 

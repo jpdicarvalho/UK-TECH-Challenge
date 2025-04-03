@@ -41,7 +41,7 @@ function AnotherGamesSlider({ games }) {
                 </div>
               </div>
 
-              <div className="box__amount__users center">
+              <div className="box__amount__users">
                 <FiUser />
                 {game.users}
               </div>

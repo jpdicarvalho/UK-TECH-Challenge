@@ -18,6 +18,8 @@ import ForageImg from "../assets/forage-img.png";
 import CursaderImg from "../assets/crusader-img.png";
 import MergeImg from "../assets/merge-img.png";
 import StardewImg from "../assets/stardew-img.png";
+import FifaImg from "../assets/fifa-img.png";
+import WukongImg from "../assets/wukong-img.png";
 
 import SiniperImg from "../assets/sniper-elite-img.png";
 import Gang from "../assets/gang-beasts-img.png";
@@ -160,6 +162,22 @@ export const recomendationGames = [
     image: SiniperImg,
     label: "Tiro",
     message: "Seja um verdadeiro franco atirador!",
+    users: 224,
+  },
+  {
+    id: 4,
+    name: "Fifa 24",
+    image: FifaImg,
+    label: "Esporte",
+    message: "Jogue com amigos e pessoas de todo o mundo.",
+    users: 224,
+  },
+  {
+    id: 5,
+    name: "Black Myth Wukong",
+    image: WukongImg,
+    label: "Ação",
+    message: "Conheça essa jornada hitórica.",
     users: 224,
   },
 ];

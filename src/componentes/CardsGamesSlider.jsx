@@ -20,7 +20,7 @@ function CardsGamesSlider({ title, games }) {
       </div>
       <div className="header__most__played__games">
         <h3 className="tittle__most__payed__games">{title}</h3>
-        <div className="box__see__more center">
+        <div className="box__see__more">
           <p className="text__see__more">VER MAIS</p>
           <MdArrowRightAlt />
         </div>
@@ -53,7 +53,7 @@ function CardsGamesSlider({ title, games }) {
                 </div>
               </div>
 
-              <div className="box__amount__users center">
+              <div className="box__amount__users">
                 <FiUser />
                 {game.users}
               </div>

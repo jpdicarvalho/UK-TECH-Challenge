@@ -12,7 +12,7 @@ function RewardCoins() {
   return (
     <div className="section__reward__coins">
       <div className="box__reward__coins">
-        <div className="box__img__coin center">
+        <div className="box__img__coin">
           <img src={CoinImg} alt="Moeda" />
         </div>
         <div className="box__text__reward__coins">

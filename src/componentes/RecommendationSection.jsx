@@ -3,6 +3,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import { FiUser } from "react-icons/fi";
+import { MdArrowRightAlt } from "react-icons/md";
 
 import LabelGame from "../assets/label-game.png";
 
@@ -14,16 +15,17 @@ function RecommendationSection({ title, games }) {
     <div className="section__most__played__games">
       <div className="header__most__played__games">
         <h3 className="tittle__most__payed__games">{title}</h3>
-        <div className="box__see__more center">
+        <div className="box__see__more">
           <p className="text__see__more">VER MAIS</p>
+          <MdArrowRightAlt />
         </div>
       </div>
 
       <div className="container__recomendation__game">
         <Swiper
           modules={[Autoplay]}
-          spaceBetween={20}
-          slidesPerView={3}
+          spaceBetween={15}
+          slidesPerView={2}
           loop={true}
           speed={7000}
           autoplay={{
@@ -46,7 +48,7 @@ function RecommendationSection({ title, games }) {
                 </div>
               </div>
 
-              <div className="box__amount__users in__card__recomendation__game center">
+              <div className="box__amount__users in__card__recomendation__game ">
                 <FiUser />
                 {game.users}
               </div>

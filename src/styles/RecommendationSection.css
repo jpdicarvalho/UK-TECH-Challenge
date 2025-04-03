@@ -1,64 +1,151 @@
-.container__Swiper{
-    overflow: hidden;
-    margin-left: 40px;
-    width: 2400px;
-  
+.container__recomendation__game{
+  padding-top: 40px;
+}
+.container__Swiper {
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 40px;
+  box-sizing: border-box;
+}
+
+.container__SwiperSlide {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.card__recomendation__game {
+  width: 700px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.image__wrapper__card__most__payed__game {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.img__cover__game {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img__mask__card__most__payed__game {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(32, 32, 32, 0.607);
+  z-index: 1;
+  border-radius: 8px;
+}
+
+.in__card__recomendation__game {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(128, 128, 128, 0.3);
+  color: #f6f6f6;
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-size: 14px;
+  z-index: 2;
+}
+
+.box__details__recomendation__game {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #f6f6f6;
+  z-index: 2;
+  max-width: 90%;
+}
+
+.box__img__label__recomendation__game {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.text__label__recomendation__game {
+  font-size: 12px;
+}
+
+.text__message__label__recomendation__game {
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 6px;
+}
+
+.btn__play__recomendation__game {
+  height: 40px;
+  padding: 0 20px;
+  background: transparent;
+  border: 2px solid #E8B15B;
+  color: #E8B15B;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  margin-top: 20px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.btn__play__recomendation__game:hover {
+  background: #E8B15B;
+  color: #000;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .container__Swiper {
+    padding: 20px;
   }
-  .container__SwiperSlide{
-    height: 600px;
-    width: 600px;
-    border-radius: 12px;
-    background: yellow;
-    overflow: hidden;
-  
+
+  .text__message__label__recomendation__game {
+    font-size: 13px;
   }
-  .card__recomendation__game{
-    background: green;
-    width: 600px;
-    height: 600px;
-    overflow: hidden;
-  
+
+  .btn__play__recomendation__game {
+    height: 38px;
+    font-size: 13px;
   }
-  .in__card__recomendation__game{
-    margin-top: -585px;
-  }
-  .box__details__recomendation__game{
-    position: absolute;
-    margin-top: -220px;
-    color: #f6f6f6;
-    padding-left: 20px;
-    z-index: 2;
-  }
-  .box__img__label__recomendation__game{
-    display: flex;
-    justify-content: space-between;
-    width: 45px;
+}
+
+/* Mobile compacto: largura menor que 400px */
+@media (max-width: 470px) {
+  .container__SwiperSlide {
+    flex-direction: column;
     align-items: center;
-    margin-bottom: 20px
   }
-  .text__label__recomendation__game{
+
+  .card__recomendation__game {
+    width: 380px;
+    height: 300px;
+    aspect-ratio: auto;
+  }
+
+  .box__details__recomendation__game {
+    left: 15px;
+    bottom: 15px;
+    font-size: 16px;
+  }
+
+  .btn__play__recomendation__game {
+    width: 100%;
+    max-width: 280px;
+    font-size: 13px;
+  }
+
+  .text__message__label__recomendation__game {
     font-size: 12px;
   }
-  .text__message__label__recomendation__game{
-    font-size: 14px;
-    font-weight: 200;
-    margin-top: 6px;
-  }
-  .btn__play__recomendation__game{
-    height: 50px;
-    width: 150px;
-    padding: 10px;
-    background: transparent;
-    border: 2px solid #E8B15B;
-    color: #E8B15B;
-    font-size: 16px;
-    font-weight: 700;
-    border-radius: 8px;
-    margin-top: 40px;
-    transition: 0.5s;
-  }
-  .btn__play__recomendation__game:hover{
-    background: #E8B15B;
-    color: #000;
-    transition: 0.5s;
-  }
+}

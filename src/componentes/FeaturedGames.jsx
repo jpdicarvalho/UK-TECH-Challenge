@@ -40,7 +40,7 @@ function FeaturedGames({ featuredGames, gameSelected, onSelectGame }) {
           <div className="box__btn__play__game">
             <p className="text__add__to__favorites">Adicionar aos favoritos</p>
             <IoIosHeartEmpty className="icon__IoIosHeartEmpty" />
-            <button className="inner__btn btn__active center">
+            <button className="inner__btn btn__active">
               Jogar agora
               <IoPlay className="icon__IoPlay" />
             </button>

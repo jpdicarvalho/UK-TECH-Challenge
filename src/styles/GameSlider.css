@@ -94,12 +94,13 @@
 .box__amount__users {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   background: rgba(128, 128, 128, 0.3);
   color: #f6f6f6;
   position: absolute;
   top: 10px;
   left: 10px;
+  width: 65px;
   border-radius: 20px;
   padding: 5px 10px;
   font-size: 14px;

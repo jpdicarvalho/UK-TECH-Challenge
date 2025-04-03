@@ -32,6 +32,41 @@ Durante o desenvolvimento, foram seguidas diversas boas práticas de engenharia 
 - Estrutura de pastas modular para facilitar manutenção e escalabilidade
 - Boas práticas de semântica HTML e acessibilidade
 
+src/
+├── assets/                 # Imagens estáticas e ícones
+├── componentes/            # Componentes reutilizáveis
+├── data/                   # Dados mockados para exibição
+├── pages/                  # Página principal da aplicação
+├── styles/                 # Arquivos CSS separados por componente
+└── main.jsx                # Entrada da aplicação
+
+## Como Rodar o Projeto Localmente?
+
+Antes de começar, verifique se sua máquina possui o seguinte pré-requisito instalado:  
+
+ - **[Node.js](https://nodejs.org/pt)**
+
+Verifique com o comando:  
+  ```sh
+  node -v
+  ````
+
+Com a etapa anterior concluída, siga os seguintes passos: 
+
+**1️. Clonar o Repositório**
+
+Abra um terminal e execute:  
+  ```sh
+  git clone https://github.com/jpdicarvalho/UK-TECH-Challenge.git
+  ````
+Em seguida, acesse o diretório que contém o projeto  
+  ````sh
+  cd UK-TECH-Challenge
+  ````
+Depois, para acessar a aplicação, use:
+  ````sh
+   http://localhost:5173
+  ````
 
 ## Considerações finais
 

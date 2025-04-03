@@ -39,7 +39,7 @@ src/
 ├── data/                   # Dados mockados para exibição
 ├── games_images/           # Imagens estáticas
 ├── pages/                  # Página principal da aplicação
-├── styles/                 # Arquivos CSS separados por componente
+└── styles/                 # Arquivos CSS separados por componente
 
 ````
 ## Como Rodar o Projeto Localmente?

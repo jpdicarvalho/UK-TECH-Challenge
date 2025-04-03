@@ -1,12 +1,36 @@
-# React + Vite
+# GameHub - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este repositório contém o **frontend de uma plataforma de hub de jogos**, desenvolvida com **React + Vite** e estilização feita inteiramente com **CSS puro**.
 
-Currently, two official plugins are available:
+A proposta da aplicação é apresentar uma interface dinâmica, moderna e responsiva onde usuários possam visualizar jogos em destaque, jogos mais jogados, recomendações personalizadas e outros tipos de conteúdo visual relacionados ao universo gamer.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Funcionalidades implementadas
 
-## Expanding the ESLint configuration
+- Seção de jogos em destaque com interação visual e seleção dinâmica
+- Carrosséis de jogos com autoplay e interação manual
+- Recomendações personalizadas com informações detalhadas
+- Layout responsivo para diferentes tamanhos de tela
+- Componente de recompensa com destaque para ações do usuário
+- Rodapé institucional com informações e links úteis
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tecnologias utilizadas
+
+- **React** com Vite
+- **CSS Puro** para estilização, sem frameworks de UI
+- **SwiperJS** para implementação dos carrosséis
+- **React Icons** para uso de ícones
+
+## Boas práticas aplicadas
+
+Durante o desenvolvimento, foram seguidas diversas boas práticas de engenharia de software, com foco em:
+
+- **Organização em componentes reutilizáveis**
+- **Separação de responsabilidades**
+- **Aplicação dos princípios do SOLID sempre que possível**
+- **Uso de código limpo (Clean Code)**
+- **Estilização responsiva adaptada para diferentes resoluções**
+- Estrutura de pastas modular para facilitar manutenção e escalabilidade
+- Boas práticas de semântica HTML e acessibilidade
+
+## Estrutura do projeto
+

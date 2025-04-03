@@ -8,6 +8,7 @@ import { MdArrowRightAlt } from "react-icons/md";
 import "swiper/css";
 
 import "../styles/GameSlider.css";
+import "../styles/AnotherGamesSlider.css";
 
 function AnotherGamesSlider({ games }) {
   return (

@@ -1,0 +1,39 @@
+.container__card__anhother__game {
+  width: 100%;
+  padding: 20px 40px;
+}
+
+.Swiper__card__anhother__game {
+  width: 100%;
+  overflow: hidden;
+}
+
+.SwiperSlide__card__anhother__game {
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card__anhother__game {
+  height: 300px;
+  width: 100%;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .container__card__anhother__game {
+    padding: 20px;
+  }
+
+  .card__anhother__game {
+    height: 240px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .card__anhother__game {
+    height: 200px;
+  }
+
+}

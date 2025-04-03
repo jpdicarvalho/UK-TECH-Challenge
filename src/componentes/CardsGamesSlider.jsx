@@ -5,7 +5,7 @@ import { Autoplay } from "swiper/modules";
 import { FiUser } from "react-icons/fi";
 import { MdArrowRightAlt } from "react-icons/md";
 
-import UnoImg from "../assets/uno-img.png";
+import UnoImg from "../games_images/uno-img.png";
 
 import "swiper/css";
 

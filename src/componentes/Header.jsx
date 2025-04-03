@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../assets/logo.png";
+import Logo from "../games_images/logo.png";
 
 import "../styles/Header.css";
 

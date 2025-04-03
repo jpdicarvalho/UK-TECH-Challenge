@@ -1,7 +1,7 @@
 import React from "react";
 
-import CoinImg from "../assets/coin-img.png";
-import BannerImg from "../assets/banner-image.png";
+import CoinImg from "../games_images/coin-img.png";
+import BannerImg from "../games_images/banner-image.png";
 
 import { MdArrowRightAlt } from "react-icons/md";
 

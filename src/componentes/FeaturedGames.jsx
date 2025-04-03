@@ -1,6 +1,6 @@
 import React from "react";
 
-import LabelGame from "../assets/label-game.png";
+import LabelGame from "../games_images/label-game.png";
 
 import { IoIosHeartEmpty } from "react-icons/io";
 import { IoPlay } from "react-icons/io5";

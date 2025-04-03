@@ -16,7 +16,7 @@ import "./GetStarted.css";
 
 function GetStarted() {
   const [isBtnSelected, setIsBtnSelected] = useState(false);
-  const [gameSelected, setGameSelected] = useState(null);
+  const [gameSelected, setGameSelected] = useState(1);
 
   const selectedGame = featuredGames.find((game) => game.id === gameSelected);
 

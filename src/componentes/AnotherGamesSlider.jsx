@@ -3,7 +3,6 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import { FiUser } from "react-icons/fi";
-import { MdArrowRightAlt } from "react-icons/md";
 
 import "swiper/css";
 

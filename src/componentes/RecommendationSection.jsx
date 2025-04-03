@@ -5,7 +5,7 @@ import { Autoplay } from "swiper/modules";
 import { FiUser } from "react-icons/fi";
 import { MdArrowRightAlt } from "react-icons/md";
 
-import LabelGame from "../assets/label-game.png";
+import LabelGame from "../games_images/label-game.png";
 
 import "swiper/css";
 import "../styles/RecommendationSection.css";

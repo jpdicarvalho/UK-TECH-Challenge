@@ -32,6 +32,7 @@ Durante o desenvolvimento, foram seguidas diversas boas práticas de engenharia 
 - Estrutura de pastas modular para facilitar manutenção e escalabilidade
 - Boas práticas de semântica HTML e acessibilidade
 
+```sh
 src/
 ├── assets/                 # Imagens estáticas e ícones
 ├── componentes/            # Componentes reutilizáveis
@@ -39,7 +40,7 @@ src/
 ├── pages/                  # Página principal da aplicação
 ├── styles/                 # Arquivos CSS separados por componente
 └── main.jsx                # Entrada da aplicação
-
+````
 ## Como Rodar o Projeto Localmente?
 
 Antes de começar, verifique se sua máquina possui o seguinte pré-requisito instalado:  

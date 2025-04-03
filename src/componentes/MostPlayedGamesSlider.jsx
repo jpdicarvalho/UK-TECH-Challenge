@@ -34,8 +34,9 @@ function MostPlayedGamesSlider({ title, games }) {
           loop={true}
           speed={7000}
           autoplay={{
-            delay: 0,
-            disableOnInteraction: false,
+            delay: 3000, 
+            disableOnInteraction: true, 
+            pauseOnMouseEnter: true, 
           }}
           breakpoints={{
             640: { slidesPerView: 2 },

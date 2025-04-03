@@ -32,5 +32,11 @@ Durante o desenvolvimento, foram seguidas diversas boas práticas de engenharia 
 - Estrutura de pastas modular para facilitar manutenção e escalabilidade
 - Boas práticas de semântica HTML e acessibilidade
 
-## Estrutura do projeto
 
+## Considerações finais
+
+A aplicação foi construída com atenção aos detalhes visuais, desempenho e organização do código, visando uma base sólida e escalável para futuras funcionalidades. Toda a interface foi pensada para entregar uma experiência agradável ao usuário, com carrosséis animados, seleção de jogos, informações claras e transições suaves.
+
+Este projeto representa o frontend da plataforma, mas está preparado para integração com serviços externos ou APIs REST caso seja necessário no futuro.
+
+---

@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import GetStarted from './GetStarted';
+import GetStarted from './pages/GetStarted';
 
 function App() {
 

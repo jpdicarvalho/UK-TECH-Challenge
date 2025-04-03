@@ -1,18 +1,18 @@
 import React, { useState } from "react";
-import Header from "../src/componentes/Header";
-import FeaturedGames from "../src/componentes/FeaturedGames";
-import MostPlayedGamesSlider from "./componentes/MostPlayedGamesSlider";
-import AnotherGamesSlider from "./componentes/AnotherGamesSlider";
-import CardsGamesSlider from "./componentes/CardsGamesSlider";
-import RewardCoins from "../src/componentes/RewardCoins";
-import RecommendationSection from "../src/componentes/RecommendationSection";
-import StrategyGamesSlider from "../src/componentes/StrategyGamesSlider";
-import Footer from "./componentes/Footer";
+import Header from "../componentes/Header";
+import FeaturedGames from "../componentes/FeaturedGames";
+import MostPlayedGamesSlider from "../componentes/MostPlayedGamesSlider";
+import AnotherGamesSlider from "../componentes/AnotherGamesSlider";
+import CardsGamesSlider from "../componentes/CardsGamesSlider";
+import RewardCoins from "../componentes/RewardCoins";
+import RecommendationSection from "../componentes/RecommendationSection";
+import StrategyGamesSlider from "../componentes/StrategyGamesSlider";
+import Footer from "../componentes/Footer";
 
 
-import { featuredGames, mostPlayedGames, anotherGames, cardsGames, recomendationGames, strategeGames } from "../src/data/games";
+import { featuredGames, mostPlayedGames, anotherGames, cardsGames, recomendationGames, strategeGames } from "../data/games";
 
-import "./GetStarted.css";
+import "../styles/GetStarted.css";
 
 function GetStarted() {
   const [isBtnSelected, setIsBtnSelected] = useState(false);
